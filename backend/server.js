@@ -30,3 +30,4 @@ app.listen(PORT, () => {
 
 // finish this project course
 // redo e commerce with firebase
+// redo this project with firebase
