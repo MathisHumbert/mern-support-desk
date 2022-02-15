@@ -6,6 +6,7 @@ const app = express();
 
 const connectDB = require('./config/db');
 const userRouter = require('./routes/userRoutes');
+const ticketRouter = require('./routes/ticketRoutes');
 const errorHandler = require('./middleware/errorMiddleware');
 
 app.use(express.json());
@@ -19,6 +20,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/users', userRouter);
+app.use('/api/tickets', ticketRouter);
 
 app.use(errorHandler);
 
